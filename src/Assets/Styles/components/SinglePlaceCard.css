@@ -1,0 +1,29 @@
+iframe {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 5px;
+}
+
+.thumbs-wrapper{
+    margin: 5px !important;
+}
+ul{
+    margin-bottom: 0 !important;
+}
+
+.thumb {
+    height: 100px;
+    width: 100px !important;
+    padding: 0 !important;
+    
+}
+.thumb img {
+    max-height: 100px;
+    width: 100px !important;
+    object-fit: cover !important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}

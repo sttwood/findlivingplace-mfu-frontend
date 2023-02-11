@@ -1,0 +1,34 @@
+
+
+.Wrapper {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 10%;
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+p {
+    color: #777777ff;
+}
+
+a:hover {
+    text-decoration: none;
+}
