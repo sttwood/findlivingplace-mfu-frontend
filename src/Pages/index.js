@@ -16,6 +16,7 @@ import Container from 'react-bootstrap/Container'
 
 
 const index = () => {
+
   return (
     <>
       <img src={Banner} alt='banner' style={{ width: '100%', height: '350px' }} />
@@ -26,9 +27,9 @@ const index = () => {
           </h2>
         </Divider>
         <ShowNewPost />
-        <Button 
-          className="mt-2" 
-          style={{ display: 'block', margin: '0 auto', width: '10%' }} 
+        <Button
+          className="mt-2"
+          style={{ display: 'block', margin: '0 auto', width: '10%' }}
           variant="contained"
           component={Link}
           to='/places'
