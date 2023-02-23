@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-// const REACT_APP_API = 'https://findlivingplace-mfu-backend.vercel.app/api'
+const REACT_APP_API = 'https://findlivingplace-mfu-backend.vercel.app/api'
 
 // GET [User List]
 export const userList = async (authtoken) => {
-    return await axios.get(process.env.REACT_APP_API + '/users', {
+    return await axios.get(REACT_APP_API + '/users', {
         headers: {
             authtoken,
         },
@@ -12,11 +12,11 @@ export const userList = async (authtoken) => {
 }
 // GET [One]
 export const userRead = async (id) =>
-    await axios.get(process.env.REACT_APP_API + '/users/' + id)
+    await axios.get(REACT_APP_API + '/users/' + id)
 
 // POST [Change Status]
 export const changeStatus = async (authtoken, value) => {
-    return await axios.post(process.env.REACT_APP_API + '/change-status', value, {
+    return await axios.post(REACT_APP_API + '/change-status', value, {
         headers: {
             authtoken,
         },
@@ -24,7 +24,7 @@ export const changeStatus = async (authtoken, value) => {
 }
 // POST [Change Role]
 export const changeRole = async (authtoken, value) => {
-    return await axios.post(process.env.REACT_APP_API + '/change-role', value,
+    return await axios.post(REACT_APP_API + '/change-role', value,
         {
             headers: {
                 authtoken,
@@ -34,7 +34,7 @@ export const changeRole = async (authtoken, value) => {
 
 // DELETE
 export const deleteUser = async (authtoken, id) => {
-    return await axios.delete(process.env.REACT_APP_API + '/users/' + id,
+    return await axios.delete(REACT_APP_API + '/users/' + id,
         {
             headers: {
                 authtoken,
@@ -44,7 +44,7 @@ export const deleteUser = async (authtoken, id) => {
 
 // PUT [Password]
 export const changePassword = async (authtoken, id, Passwordvalues) => {
-    return await axios.put(process.env.REACT_APP_API + '/users/edit-password/' + id, Passwordvalues,
+    return await axios.put(REACT_APP_API + '/users/edit-password/' + id, Passwordvalues,
         {
             headers: {
                 authtoken,
@@ -54,7 +54,7 @@ export const changePassword = async (authtoken, id, Passwordvalues) => {
 // PUT [Edit Profile]
 // First Name
 export const changeFirstname = async (authtoken, id, FirstNamevalues) =>
-    await axios.put(process.env.REACT_APP_API + '/users/edit-firstname/' + id, FirstNamevalues,
+    await axios.put(REACT_APP_API + '/users/edit-firstname/' + id, FirstNamevalues,
         {
             headers: {
                 authtoken,
@@ -62,7 +62,7 @@ export const changeFirstname = async (authtoken, id, FirstNamevalues) =>
         })
 // Last Name
 export const changeLastname = async (authtoken, id, LastNamevalues) =>
-    await axios.put(process.env.REACT_APP_API + '/users/edit-lastname/' + id, LastNamevalues,
+    await axios.put(REACT_APP_API + '/users/edit-lastname/' + id, LastNamevalues,
         {
             headers: {
                 authtoken,
@@ -70,7 +70,7 @@ export const changeLastname = async (authtoken, id, LastNamevalues) =>
         })
 // Phone Number
 export const changeTelephone = async (authtoken, id, Telephonevalues) =>
-    await axios.put(process.env.REACT_APP_API + '/users/edit-telephone/' + id, Telephonevalues,
+    await axios.put(REACT_APP_API + '/users/edit-telephone/' + id, Telephonevalues,
         {
             headers: {
                 authtoken,
@@ -79,21 +79,21 @@ export const changeTelephone = async (authtoken, id, Telephonevalues) =>
 
 // GET [favorite]
 export const getFavorite = async (authtoken) =>
-    await axios.get(process.env.REACT_APP_API + '/user/favorite',
+    await axios.get(REACT_APP_API + '/user/favorite',
         {
             headers: {
                 authtoken,
             }
         })
 export const addToFavorite = async (authtoken, placeId) =>
-    await axios.post(process.env.REACT_APP_API + '/user/favorite', { placeId },
+    await axios.post(REACT_APP_API + '/user/favorite', { placeId },
         {
             headers: {
                 authtoken,
             }
         })
 export const removeFavorite = async (authtoken, placeId) =>
-    await axios.put(process.env.REACT_APP_API + '/user/favorite/' + placeId, {},
+    await axios.put(REACT_APP_API + '/user/favorite/' + placeId, {},
         {
             headers: {
                 authtoken,
