@@ -1,18 +1,18 @@
 import axios from 'axios'
 
-const REACT_APP_API = 'https://findlivingplace-mfu-backend.vercel.app/api'
+// const REACT_APP_API = 'https://findlivingplace-mfu-backend.vercel.app/api'
 
 // POST [Register]
 export const register = async (value) =>
-    await axios.post(REACT_APP_API + '/register', value)
+    await axios.post(process.env.REACT_APP_API + '/register', value)
 
 // POST [Login]
 export const login = async (value) =>
-    await axios.post(REACT_APP_API + '/login', value)
+    await axios.post(process.env.REACT_APP_API + '/login', value)
 
 // POST [Current User]
 export const currentUser = async (authtoken) => {
-    return await axios.post(REACT_APP_API + "/current-user",
+    return await axios.post(process.env.REACT_APP_API + "/current-user",
         {},
         {
             headers: {
@@ -23,7 +23,7 @@ export const currentUser = async (authtoken) => {
 }
 // POST [Current Admin]
 export const currentAdmin = async (authtoken) => {
-    return await axios.post(REACT_APP_API + "/current-admin",
+    return await axios.post(process.env.REACT_APP_API + "/current-admin",
         {},
         {
             headers: {
