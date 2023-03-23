@@ -1,4 +1,4 @@
-# :tada:Find Living Place around MFU Web Application (Ongoing:construction:)
+# :tada:Find Living Place around MFU Web Application
 
 Find Living Place around Mae Fah Luang University website is a web for people who want to find a room to stay nearby MFU and find a website that gathering many dormitory/hoses around MFU in our website by focusing on Mae Fah Luang University students who are finding a living place because we found the problem that a large number of living places are rented outside the university and there are many dormitories around Mae Fah Luang University. Finding a living place can be difficult to find all the information that you need and it can lead to delays and possibly missing the opportunity to get the living places that you need.
 
