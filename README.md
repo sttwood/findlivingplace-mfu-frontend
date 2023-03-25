@@ -13,8 +13,6 @@ IDE           | [![My Skills](https://skillicons.dev/icons?i=vscode&theme=light)
 # :sparkles:Feature
 
 * Find living place by specific type in search or advance search.
-* Can compare 2 living places to make a decision.
-* Have comment and star rate review for helping find the good place.
 
 # :memo:Todos
 
@@ -26,7 +24,6 @@ IDE           | [![My Skills](https://skillicons.dev/icons?i=vscode&theme=light)
 * :white_check_mark: Search and Advance search
 * :white_check_mark: Post showcase in home page
 * :white_check_mark: Styling all pages and Footer
-* :black_large_square: Compare system
 
 # :package:Install Dependencies
 
