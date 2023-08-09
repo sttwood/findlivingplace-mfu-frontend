@@ -14,16 +14,8 @@ IDE           | [![My Skills](https://skillicons.dev/icons?i=vscode&theme=light)
 
 * Find living place by specific type in search or advance search.
 
-# :memo:Todos
-
-- :white_check_mark: Prepare resources
-* :white_check_mark: UX/UI Design
-* :white_check_mark: Navbar(separate by role of user)
-* :white_check_mark: Authentication
-* :white_check_mark: CRUD post & user
-* :white_check_mark: Search and Advance search
-* :white_check_mark: Post showcase in home page
-* :white_check_mark: Styling all pages and Footer
+# :memo:Demo
+* https://findlivingplace.netlify.app/
 
 # :package:Install Dependencies
 
